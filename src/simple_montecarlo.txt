@@ -1,0 +1,54 @@
+#define _USE_MATH_DEFINES
+
+#include <iostream>
+#include <iomanip>
+#include <fstream>
+#include <eigen-3.3.7/Eigen/Dense>
+#include <cmath>
+#include <string>
+
+double V_trial(double x);
+Eigen::ArrayXXd MonteCarlo(int n);
+
+int main(){
+    srand(time(0));
+    Eigen::ArrayXXd Seq;
+    Seq=MonteCarlo(10000);
+    Eigen::IOFormat csv(Eigen::FullPrecision, 0, ", ", "\n", "", "", "", "");
+    std::ofstream theFile;
+    theFile.open("Trial_file.csv");
+    theFile << "Seq" << std::endl;
+    theFile << Seq.format(csv)<< std::endl;
+    theFile.close();
+}
+//random number generator
+double fRand(double fMin, double fMax){
+    //srand(time(0));   %was making search space go wrong
+    double f = (double)rand() / RAND_MAX;
+    return fMin + f * (fMax - fMin);
+}
+//Potential
+double V_trial(double x) {
+    double res;
+    res=2*std::pow((x*x-1),2);
+    return res;
+}
+// Monte Carlo
+Eigen::ArrayXXd MonteCarlo(int n){
+    Eigen::ArrayXXd Seq(n+1,1);
+    double gamma=0.5;
+    double x, x_propose, x_new;
+    x=0;
+    for (int i = 0; i < n; i++){
+        x_propose= x + fRand(-gamma,gamma);
+        if (std::exp(-V_trial(x_propose)+V_trial(x)) >fRand(0,1)){
+            x_new=x_propose;
+        }
+        else{
+            x_new=x;
+        }
+        x=x_new;
+        Seq.row(i+1)=x;
+    }
+    return Seq;
+}
