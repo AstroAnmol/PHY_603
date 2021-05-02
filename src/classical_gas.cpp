@@ -21,37 +21,49 @@ int iRand(int range_from, int range_to) {
     return distr(generator);
 }
 // Intiator
-classical_gas::classical_gas(int number, int iterations){
+classical_gas::classical_gas(int number, int iterations, double dens){
     n=number;
     iter=iterations;
+    density=dens;
     V=n/density;
     L=std::pow(V,1.0/3.0);
+    // std::cout<<L<<std::endl;
     delta=L/20.0;
     T=beta/kB;
+    Virial_all=Eigen::ArrayXd::Zero(iter+1);
+    Acceptance=Eigen::ArrayXd::Zero(iter);
     initiate_particles();
     Iter_Conf=Initial_Conf;
+    Virial_all(0)=Virial_calc(Initial_Conf); //initial virial
     for (int i = 0; i < iter; i++){
         // select one particle randomly
         int sel=iRand(0, n-1);
         // calculate the configurtion energy
         double Iter_energy;
-        Iter_energy =conf_energy(Iter_Conf);
+        Iter_energy =part_energy(Iter_Conf, sel);
         // Calculate proposal new position
         Eigen::Vector3d new_pos;
         new_pos=proposal_particle_disp(Iter_Conf.col(sel));
+        // std::cout<<Iter_Conf.col(sel).transpose()<<'|'<<new_pos.transpose()<<std::endl;
         // Generate new configuration
         Eigen::ArrayXXd Propose_Conf;
         Propose_Conf=Iter_Conf;
         Propose_Conf.col(sel)=new_pos;
         double Propose_energy;
-        Propose_energy=conf_energy(Propose_Conf);
+        Propose_energy=part_energy(Propose_Conf, sel);
+        //std::cout<<Propose_energy<<' ';
+        //std::cout<<Iter_energy<<' ';
         // Check acceptance
-        if (std::exp(-beta*(Propose_energy+Iter_energy)) >dRand(0,1)){
+        if (std::exp(-beta*(Propose_energy-Iter_energy))>dRand(0,1)){
             Iter_Conf=Propose_Conf;
+            Acceptance(i)=1;
         }
+        //std::cout<<Acceptance(i)<<std::endl;
+        Virial_all(i+1)=Virial_calc(Iter_Conf);
     }
     Equilibirum_Conf=Iter_Conf;
-    Virial_calc();
+    std::cout<<"Acceptance Rate: "<<Acceptance.sum()/iter<<std::endl;
+    Jackknife();
 }
 
 //relative distance between two particles
@@ -94,16 +106,27 @@ void classical_gas::initiate_particles(){
 }
 // calculate conf energy
 double classical_gas::conf_energy(Eigen::ArrayXXd Conf){
-    double energy;
+    double energy=0;
     for (int i = 0; i < n; i++){
         for (int j = 0; j < n; j++){
-            if (i!=j){
+            if (i<j){
                 energy=energy+potential_gaussian(Conf.col(i),Conf.col(j));
             }
         }
     }
-    return energy/2.0;
+    return energy;
 }
+// calculate energy of kth particle in a conf
+double classical_gas::part_energy(Eigen::ArrayXXd Conf, int k){
+    double energy=0;
+    for (int i = 0; i < n; i++){
+        if (i!=k){
+            energy=energy+potential_gaussian(Conf.col(i),Conf.col(k));
+        }
+    }
+    return energy;
+}
+
 // particle displacement proposal
 Eigen::Vector3d classical_gas::proposal_particle_disp(Eigen::Vector3d org_pos){
     Eigen::Vector3d new_pos;
@@ -113,24 +136,60 @@ Eigen::Vector3d classical_gas::proposal_particle_disp(Eigen::Vector3d org_pos){
     return new_pos;
 } 
 // Calculate Virial
-void classical_gas::Virial_calc(){
-    double vir;
+double classical_gas::Virial_calc(Eigen::ArrayXXd Conf){
+    double vir=0;
     Eigen::Vector3d force;
     Eigen::Vector3d rel_distance;
     for (int i = 0; i < n; i++){
         for (int j = 0; j < n; j++){
             if (i!=j){
-                force=force_gaussian(Equilibirum_Conf.col(i),Equilibirum_Conf.col(j));
-                rel_distance=rel_dist(Equilibirum_Conf.col(i),Equilibirum_Conf.col(j));
+                force=force_gaussian(Conf.col(i),Conf.col(j));
+                rel_distance=rel_dist(Conf.col(i),Conf.col(j));
                 vir=vir + force.dot(rel_distance);
             }
         }
     }
     vir=vir/2.0;
-    Virial=vir;
+    return vir;
 }
 
+// Jackknife Analysis
+void classical_gas::Jackknife(){
+    //compute average exluding ith measurement
+    Eigen::ArrayXd Avg_exd_i(iter+1);
+    for (int i = 0; i < iter+1; i++){
+        double avg;
+        avg=Virial_all.sum()-Virial_all(i);
+        avg=avg/(iter);
+        Avg_exd_i(i)=avg;
+    }
+    // compute best estimate of virial
+    Virial_avg=Avg_exd_i.sum()/(iter+1);
+    // compute error bar
+    double a;
+    for (int i = 0; i < iter+1; i++){
+        a = a + std::pow((Avg_exd_i(i) - Virial_avg),2);
+    }
+    error_bar=std::sqrt( iter*a/(iter+1) );
+}   
+
 //Get functions
-double classical_gas::get_Virial(){
-    return Virial;
+double classical_gas::get_avg_Virial(){
+    return Virial_avg;
+}
+double classical_gas::get_error_bar(){
+    return error_bar;
+}
+
+void classical_gas::get_all_Virial(std::string name){
+    Eigen::IOFormat csv(Eigen::FullPrecision, 0, ", ", "\n", "", "", "", "");
+    std::ofstream theFile;
+    std::ostringstream oss;
+    oss <<name<<"_Virial_"<<n<<'_'<<density<<'_'<<beta<<'_'<<iter;
+    std::string file_name;
+    file_name=oss.str();
+    theFile.open(file_name);
+    theFile << "Virials" << std::endl;
+    theFile << Virial_all.format(csv)<< std::endl;
+    theFile.close();
 }
