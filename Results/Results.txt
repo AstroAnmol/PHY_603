@@ -1,0 +1,729 @@
+Trial: 01 Density=0.1, Iterations:10000
+Beta: 1 
+
+---------------------------------
+Number of Particles: 40
+---------------------------------
+Acceptance Rate: 0.1782
+Virial per particle: 0.706796
+Error bar: 0.000194908
+
+---------------------------------
+Number of Particles: 60
+---------------------------------
+Acceptance Rate: 0.1221
+Virial per particle: 0.788093
+Error bar: 0.000163204
+
+---------------------------------
+Number of Particles: 80
+---------------------------------
+Acceptance Rate: 0.0956
+Virial per particle: 0.869149
+Error bar: 0.000229463
+
+---------------------------------
+Number of Particles: 100
+---------------------------------
+Acceptance Rate: 0.0803
+Virial per particle:  0.831645
+Error bar: 0.000202798
+
+---------------------------------
+Number of Particles: 120
+---------------------------------
+Acceptance Rate: 0.0688
+Virial per particle: 0.975225
+Error bar: 0.000268487
+
+---------------------------------
+Number of Particles: 140
+---------------------------------
+Acceptance Rate: 0.0658
+Virial per particle:  0.764741
+Error bar: 0.000171449
+
+---------------------------------
+Number of Particles: 160
+---------------------------------
+Acceptance Rate: 0.0498
+Virial per particle:  0.900835
+Error bar: 0.000185878
+
+---------------------------------
+Number of Particles: 180
+---------------------------------
+Acceptance Rate: 0.0453
+Virial per particle:  0.84093
+Error bar: 0.000190708
+
+---------------------------------
+Number of Particles: 200
+---------------------------------
+Acceptance Rate: 0.0435
+Virial per particle: 0.873165
+Error bar:  0.000155824
+
+Trial: 01 Density=0.1, Iterations:10000
+Beta: 1
+
+---------------------------------
+Number of Particles: 40
+---------------------------------
+Acceptance Rate: 0.2011
+Virial per particle: 0.935172
+Error bar: 0.000629553
+
+---------------------------------
+Number of Particles: 60
+---------------------------------
+Acceptance Rate: 0.1385
+Virial per particle: 0.767403
+Error bar: 0.000224088
+
+---------------------------------
+Number of Particles: 80
+---------------------------------
+Acceptance Rate: 0.093
+Virial per particle: 0.874229
+Error bar: 0.000243624
+
+---------------------------------
+Number of Particles: 100
+---------------------------------
+Acceptance Rate: 0.0857
+Virial per particle: 0.944035
+Error bar: 0.000392699
+
+---------------------------------
+Number of Particles: 120
+---------------------------------
+Acceptance Rate: 0.08
+Virial per particle: 0.878217
+Error bar: 0.000259827
+
+---------------------------------
+Number of Particles: 140
+---------------------------------
+Acceptance Rate: 0.0551
+Virial per particle: 0.863654
+Error bar: 0.000204866
+
+---------------------------------
+Number of Particles: 160
+---------------------------------
+Acceptance Rate: 0.0525
+Virial per particle: 0.892164
+Error bar: 0.000283639
+
+---------------------------------
+Number of Particles: 180
+---------------------------------
+Acceptance Rate: 0.0406
+Virial per particle: 0.885251
+Error bar: 0.000206149
+
+---------------------------------
+Number of Particles: 200
+---------------------------------
+Acceptance Rate: 0.0442
+Virial per particle: 0.867863
+Error bar: 0.000288365
+
+------------------------------------------------
+Trial 01:
+------------------------------------------------
+------------------------------------------------
+Density: 0.001
+Beta: 1
+Iterations: 10000
+---------------------------------
+Number of Particles: 40
+---------------------------------
+Acceptance Rate: 0.2528
+Virial per particle: 3.1145
+Error bar: 0.00908874
+
+---------------------------------
+Number of Particles: 60
+---------------------------------
+Acceptance Rate: 0.2176
+Virial per particle: 2.81393
+Error bar: 0.00574298
+
+---------------------------------
+Number of Particles: 80
+---------------------------------
+Acceptance Rate: 0.1995
+Virial per particle: 2.71797
+Error bar: 0.00732819
+
+---------------------------------
+Number of Particles: 100
+---------------------------------
+Acceptance Rate: 0.1796
+Virial per particle: 2.30415
+Error bar: 0.00625983
+
+---------------------------------
+Number of Particles: 120
+---------------------------------
+Acceptance Rate: 0.171
+Virial per particle: 2.15703
+Error bar: 0.00581376
+
+---------------------------------
+Number of Particles: 140
+---------------------------------
+Acceptance Rate: 0.1681
+Virial per particle: 2.10381
+Error bar: 0.00562687
+
+---------------------------------
+Number of Particles: 160
+---------------------------------
+Acceptance Rate: 0.1639
+Virial per particle: 1.93674
+Error bar: 0.00519169
+
+---------------------------------
+Number of Particles: 180
+---------------------------------
+Acceptance Rate: 0.1566
+Virial per particle: 1.80751
+Error bar: 0.00590498
+
+---------------------------------
+Number of Particles: 200
+---------------------------------
+Acceptance Rate: 0.1485
+Virial per particle: 1.70299
+Error bar: 0.0044652
+
+Density: 0.005
+Beta: 1
+Iterations: 10000
+---------------------------------
+Number of Particles: 40
+---------------------------------
+Acceptance Rate: 0.1789
+Virial per particle: 1.08925
+Error bar: 0.00269677
+
+---------------------------------
+Number of Particles: 60
+---------------------------------
+Acceptance Rate: 0.123
+Virial per particle: 1.27292
+Error bar: 0.00262707
+
+---------------------------------
+Number of Particles: 80
+---------------------------------
+Acceptance Rate: 0.0998
+Virial per particle: 1.27842
+Error bar: 0.00404308
+
+---------------------------------
+Number of Particles: 100
+---------------------------------
+Acceptance Rate: 0.0828
+Virial per particle: 1.13178
+Error bar: 0.00315115
+
+---------------------------------
+Number of Particles: 120
+---------------------------------
+Acceptance Rate: 0.0754
+Virial per particle: 1.03023
+Error bar: 0.00303073
+
+---------------------------------
+Number of Particles: 140
+---------------------------------
+Acceptance Rate: 0.0655
+Virial per particle: 0.876858
+Error bar: 0.00254135
+
+---------------------------------
+Number of Particles: 160
+---------------------------------
+Acceptance Rate: 0.064
+Virial per particle: 1.03318
+Error bar: 0.00277196
+
+---------------------------------
+Number of Particles: 180
+---------------------------------
+Acceptance Rate: 0.0614
+Virial per particle: 0.831236
+Error bar: 0.00224645
+
+---------------------------------
+Number of Particles: 200
+---------------------------------
+Acceptance Rate: 0.0572
+Virial per particle: 0.817292
+Error bar: 0.00196358
+
+Density: 0.01
+Beta: 1
+Iterations: 10000
+---------------------------------
+Number of Particles: 40
+---------------------------------
+Acceptance Rate: 0.1773
+Virial per particle: 0.732156
+Error bar: 0.00184973
+
+---------------------------------
+Number of Particles: 60
+---------------------------------
+Acceptance Rate: 0.1254
+Virial per particle: 0.813239
+Error bar: 0.00245685
+
+---------------------------------
+Number of Particles: 80
+---------------------------------
+Acceptance Rate: 0.0877
+Virial per particle: 0.629381
+Error bar: 0.000955942
+
+---------------------------------
+Number of Particles: 100
+---------------------------------
+Acceptance Rate: 0.0779
+Virial per particle: 0.714719
+Error bar: 0.001405
+
+---------------------------------
+Number of Particles: 120
+---------------------------------
+Acceptance Rate: 0.0623
+Virial per particle: 0.556245
+Error bar: 0.000949817
+
+---------------------------------
+Number of Particles: 140
+---------------------------------
+Acceptance Rate: 0.0544
+Virial per particle: 0.570858
+Error bar: 0.00102838
+
+---------------------------------
+Number of Particles: 160
+---------------------------------
+Acceptance Rate: 0.0483
+Virial per particle: 0.763748
+Error bar: 0.00160715
+
+---------------------------------
+Number of Particles: 180
+---------------------------------
+Acceptance Rate: 0.0466
+Virial per particle: 0.647231
+Error bar: 0.0012223
+
+---------------------------------
+Number of Particles: 200
+---------------------------------
+Acceptance Rate: 0.0413
+Virial per particle: 0.59134
+Error bar: 0.00142642
+
+Density: 0.05
+Beta: 1
+Iterations: 10000
+---------------------------------
+Number of Particles: 40
+---------------------------------
+Acceptance Rate: 0.2085
+Virial per particle: 0.550775
+Error bar: 0.000368222
+
+---------------------------------
+Number of Particles: 60
+---------------------------------
+Acceptance Rate: 0.1324
+Virial per particle: 0.628348
+Error bar: 0.000522527
+
+---------------------------------
+Number of Particles: 80
+---------------------------------
+Acceptance Rate: 0.0993
+Virial per particle: 0.485649
+Error bar: 0.000497088
+
+---------------------------------
+Number of Particles: 100
+---------------------------------
+Acceptance Rate: 0.078
+Virial per particle: 0.57295
+Error bar: 0.000272936
+
+---------------------------------
+Number of Particles: 120
+---------------------------------
+Acceptance Rate: 0.0581
+Virial per particle: 0.479689
+Error bar: 0.000204248
+
+---------------------------------
+Number of Particles: 140
+---------------------------------
+Acceptance Rate: 0.0564
+Virial per particle: 0.542227
+Error bar: 0.000335987
+
+---------------------------------
+Number of Particles: 160
+---------------------------------
+Acceptance Rate: 0.0451
+Virial per particle: 0.531044
+Error bar: 0.000315983
+
+---------------------------------
+Number of Particles: 180
+---------------------------------
+Acceptance Rate: 0.0429
+Virial per particle: 0.517526
+Error bar: 0.000562919
+
+---------------------------------
+Number of Particles: 200
+---------------------------------
+Acceptance Rate: 0.0404
+Virial per particle: 0.585595
+Error bar: 0.000583274
+
+Density: 0.2
+Beta: 1
+Iterations: 10000
+---------------------------------
+Number of Particles: 40
+---------------------------------
+Acceptance Rate: 0.2142
+Virial per particle: 1.47961
+Error bar: 0.00031997
+
+---------------------------------
+Number of Particles: 60
+---------------------------------
+Acceptance Rate: 0.1492
+Virial per particle: 1.42702
+Error bar: 0.000611675
+
+---------------------------------
+Number of Particles: 80
+---------------------------------
+Acceptance Rate: 0.1043
+Virial per particle: 1.53165
+Error bar: 0.000170376
+
+---------------------------------
+Number of Particles: 100
+---------------------------------
+Acceptance Rate: 0.0882
+Virial per particle: 1.49748
+Error bar: 0.000138746
+
+---------------------------------
+Number of Particles: 120
+---------------------------------
+Acceptance Rate: 0.0759
+Virial per particle: 1.64632
+Error bar: 0.000132395
+
+---------------------------------
+Number of Particles: 140
+---------------------------------
+Acceptance Rate: 0.0548
+Virial per particle: 1.73983
+Error bar: 0.000210322
+
+---------------------------------
+Number of Particles: 160
+---------------------------------
+Acceptance Rate: 0.0525
+Virial per particle: 1.60123
+Error bar: 0.000172522
+
+---------------------------------
+Number of Particles: 180
+---------------------------------
+Acceptance Rate: 0.0432
+Virial per particle: 1.64821
+Error bar: 0.000117184
+
+---------------------------------
+Number of Particles: 200
+---------------------------------
+Acceptance Rate: 0.0486
+Virial per particle: 1.65679
+Error bar: 0.00013478
+
+Density: 0.5
+Beta: 1
+Iterations: 10000
+---------------------------------
+Number of Particles: 40
+---------------------------------
+Acceptance Rate: 0.2848
+Virial per particle: 3.37266
+Error bar: 0.00119845
+
+---------------------------------
+Number of Particles: 60
+---------------------------------
+Acceptance Rate: 0.1633
+Virial per particle: 3.67926
+Error bar: 0.000365271
+
+---------------------------------
+Number of Particles: 80
+---------------------------------
+Acceptance Rate: 0.1269
+Virial per particle: 3.81376
+Error bar: 0.000373411
+
+---------------------------------
+Number of Particles: 100
+---------------------------------
+Acceptance Rate: 0.0974
+Virial per particle: 3.95574
+Error bar: 0.000157319
+
+---------------------------------
+Number of Particles: 120
+---------------------------------
+Acceptance Rate: 0.0845
+Virial per particle: 3.80047
+Error bar: 0.000312543
+
+---------------------------------
+Number of Particles: 140
+---------------------------------
+Acceptance Rate: 0.0635
+Virial per particle: 3.8696
+Error bar: 0.000232493
+
+---------------------------------
+Number of Particles: 160
+---------------------------------
+Acceptance Rate: 0.0517
+Virial per particle: 4.21552
+Error bar: 0.000134259
+
+---------------------------------
+Number of Particles: 180
+---------------------------------
+Acceptance Rate: 0.0526
+Virial per particle: 4.05283
+Error bar: 0.000175643
+
+---------------------------------
+Number of Particles: 200
+---------------------------------
+Acceptance Rate: 0.05
+Virial per particle: 4.14003
+Error bar: 0.000289347
+
+Density: 1
+Beta: 1
+Iterations: 10000
+---------------------------------
+Number of Particles: 40
+---------------------------------
+Acceptance Rate: 0.2712
+Virial per particle: 5.9842
+Error bar: 0.00207063
+
+---------------------------------
+Number of Particles: 60
+---------------------------------
+Acceptance Rate: 0.1836
+Virial per particle: 7.21821
+Error bar: 0.0019325
+
+---------------------------------
+Number of Particles: 80
+---------------------------------
+Acceptance Rate: 0.1382
+Virial per particle: 8.02138
+Error bar: 0.000835824
+
+---------------------------------
+Number of Particles: 100
+---------------------------------
+Acceptance Rate: 0.1053
+Virial per particle: 7.50881
+Error bar: 0.000847295
+
+---------------------------------
+Number of Particles: 120
+---------------------------------
+Acceptance Rate: 0.0973
+Virial per particle: 7.76926
+Error bar: 0.000916473
+
+---------------------------------
+Number of Particles: 140
+---------------------------------
+Acceptance Rate: 0.0716
+Virial per particle: 8.33374
+Error bar: 0.000429861
+
+---------------------------------
+Number of Particles: 160
+---------------------------------
+Acceptance Rate: 0.0592
+Virial per particle: 8.19798
+Error bar: 0.000569657
+
+---------------------------------
+Number of Particles: 180
+---------------------------------
+Acceptance Rate: 0.0518
+Virial per particle: 8.5191
+Error bar: 0.000223457
+
+---------------------------------
+Number of Particles: 200
+---------------------------------
+Acceptance Rate: 0.0514
+Virial per particle: 8.20209
+Error bar: 0.000187486
+
+Density: 10
+Beta: 1
+Iterations: 10000
+---------------------------------
+Number of Particles: 40
+---------------------------------
+Acceptance Rate: 0.4803
+Virial per particle: 9.74205
+Error bar: 0.00405914
+
+---------------------------------
+Number of Particles: 60
+---------------------------------
+Acceptance Rate: 0.3446
+Virial per particle: 17.1975
+Error bar: 0.00298073
+
+---------------------------------
+Number of Particles: 80
+---------------------------------
+Acceptance Rate: 0.271
+Virial per particle: 23.8228
+Error bar: 0.00246382
+
+---------------------------------
+Number of Particles: 100
+---------------------------------
+Acceptance Rate: 0.2105
+Virial per particle: 30.0411
+Error bar: 0.00244419
+
+---------------------------------
+Number of Particles: 120
+---------------------------------
+Acceptance Rate: 0.1503
+Virial per particle: 35.4984
+Error bar: 0.0016598
+
+---------------------------------
+Number of Particles: 140
+---------------------------------
+Acceptance Rate: 0.1554
+Virial per particle: 40.0647
+Error bar: 0.00184083
+
+---------------------------------
+Number of Particles: 160
+---------------------------------
+Acceptance Rate: 0.1277
+Virial per particle: 44.5458
+Error bar: 0.000884532
+
+---------------------------------
+Number of Particles: 180
+---------------------------------
+Acceptance Rate: 0.1154
+Virial per particle: 48.265
+Error bar: 0.00126667
+
+---------------------------------
+Number of Particles: 200
+---------------------------------
+Acceptance Rate: 0.1103
+Virial per particle: 51.3622
+Error bar: 0.0017168
+
+Density: 100
+Beta: 1
+Iterations: 10000
+---------------------------------
+Number of Particles: 40
+---------------------------------
+Acceptance Rate: 0.8401
+Virial per particle: 1.78881
+Error bar: 0.00382327
+
+---------------------------------
+Number of Particles: 60
+---------------------------------
+Acceptance Rate: 0.6614
+Virial per particle: 5.94726
+Error bar: 0.00530675
+
+---------------------------------
+Number of Particles: 80
+---------------------------------
+Acceptance Rate: 0.4994
+Virial per particle: 11.2359
+Error bar: 0.00412171
+
+---------------------------------
+Number of Particles: 100
+---------------------------------
+Acceptance Rate: 0.4464
+Virial per particle: 16.4502
+Error bar: 0.00440849
+
+---------------------------------
+Number of Particles: 120
+---------------------------------
+Acceptance Rate: 0.3349
+Virial per particle: 22.3047
+Error bar: 0.0041003
+
+---------------------------------
+Number of Particles: 140
+---------------------------------
+Acceptance Rate: 0.2874
+Virial per particle: 28.4631
+Error bar: 0.00293302
+
+---------------------------------
+Number of Particles: 160
+---------------------------------
+Acceptance Rate: 0.3103
+Virial per particle: 34.7036
+Error bar: 0.00268558
+
+---------------------------------
+Number of Particles: 180
+---------------------------------
+Acceptance Rate: 0.2652
+Virial per particle: 41.0653
+Error bar: 0.00267148
+
+---------------------------------
+Number of Particles: 200
+---------------------------------
+Acceptance Rate: 0.2081
+Virial per particle: 47.8135
+Error bar: 0.0024007
