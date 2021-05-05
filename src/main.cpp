@@ -45,20 +45,21 @@ int main(){
     // std::cout<<potential_gaussian(Rb,Ra)<<std::endl;
     // std::cout<<force_gaussian(Ra,Rb)<<std::endl;
     // std::cout<<force_gaussian(Rb,Ra)<<std::endl;
-    Eigen::ArrayXd n(9);
-    n<<40,60,80,100,120,140,160,180,200;
+    Eigen::ArrayXd n(17);
+    n<<40,50,60,70,80,90,100,110,120,130,140,150,160,170,180,190,200;
     int iterations=10000;
-    Eigen::ArrayXd density(9);
-    density<<0.001,0.005,0.01,0.05,0.2,0.5,1,10,100;
-    for (int j = 0; j < 9; j++){
-        std::cout<<"Density: "<<density(j)<<std::endl;
+    //Eigen::ArrayXd density(9);
+    //density<<0.001,0.005,0.01,0.05,0.2,0.5,1,10,100;
+    double density=0.1;
+    //for (int j = 0; j < 9; j++){
+        std::cout<<"Density: "<<density<<std::endl;
         std::cout<<"Beta: 1"<<std::endl;
         std::cout<<"Iterations: 10000"<<std::endl;
-        for (int i = 0; i < 9; i++){
+        for (int i = 0; i < 17; i++){
             std::cout<<"---------------------------------"<<std::endl;
             std::cout<<"Number of Particles: "<< n(i)<<std::endl;
             std::cout<<"---------------------------------"<<std::endl;
-            classical_gas gas(n(i), iterations,density(j));
+            classical_gas gas(n(i), iterations,density);
             double Virial, error;
             Virial = gas.get_avg_Virial();
             error = gas.get_error_bar();
@@ -66,5 +67,5 @@ int main(){
             std::cout<<"Error bar: "<<error/n(i)<<std::endl<<std::endl;
             gas.get_all_Virial("Trial1");
         }
-    }
+    //}
 }
