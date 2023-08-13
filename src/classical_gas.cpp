@@ -9,7 +9,7 @@
 //double random number generator
 double dRand(double dMin, double dMax){
     std::random_device                  rand_dev;
-    std::mt19937                        generator(rand_dev());
+    std::mt19937            git            generator(rand_dev());
     std::uniform_real_distribution<double>    distr(dMin, dMax);
     return distr(generator);
 }
